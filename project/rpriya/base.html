@@ -1,29 +1,73 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
+    <link rel="stylesheet" href="static/css.style.css">
 </head>
 <body>
+    
     <header>
-        <div class="topnav"> 
-            <a class="active" href="{% url 'home' %}">Home</a>
-            <a href="{% url 'news' %}">News</a>
-            <a href="{% url 'contact' %}">Contact</a>
-            <a href="{% url 'about' %}">About</a>
+   
+        <div class="topnav" style="  background-color: rgba(111, 52, 52, 0.156); overflow: hidden; padding-left: 100px;"> 
+      
+            <a style="font-size: large; color:  rgb(176, 5, 5);
+            float:  left;
+            text-align: center;
+            padding: 15px 90px ;
+            text-decoration: none;
+            font-size: 17px; "
+           class="active" href="{% url 'home' %}">Home</a>
+
+
+            <a style="font-size: large; color:  rgb(140, 4, 4); 
+            float:  left;
+            text-align: center;
+            padding: 14px 90px;
+            text-decoration: none;
+            font-size: 17px;
+            " href="{% url 'news' %}">News</a>
+
+            <a style="font-size: large; color:  rgb(140, 4, 4);
+            float:  left;
+            text-align: center;
+            padding: 14px 90px;
+            text-decoration: none;
+            font-size: 17px;
+           " href="{% url 'contact' %}">Contact</a>
+
+            <a style="font-size: large; color: rgb(140, 4, 4);
+            float: left;
+            text-align: center;
+            padding: 14px 90px;
+            text-decoration: none;
+            font-size: 17px;
+           " href="{% url 'about' %}">About</a>
+         
           </div>
+        
     </header>
     {% block content %}
 
-    <h1>Base Page</h1>
+    <h1 >Base Page</h1>
 
     {% endblock %}
 
-    <footer>
+     <footer style="background-color: rgba(111, 52, 52, 0.156);margin-top: 400px; height: 500px; ">
         <center>
-        <h1> THIS IS FOOTER PART </h1>
+        <div>
+            <a href="#"> FACEBOOK </a><br/>
+            <a href="#"> FACEBOOK </a><br/>
+            <a href="#"> FACEBOOK </a><br/>
+            <a href="#"> FACEBOOK </a><br/>
+          <h1> THIS IS FOOTER PART </h1>
+
+        </div> 
+
         </center>
     </footer>
+
 </body>
 </html>
